@@ -1,2 +1,3 @@
 # Invoke-LoginPrompt
-Invokes a Windows Security Login Prompt and outputs the clear text password.
+Details here:
+https://enigma0x3.wordpress.com/2015/01/21/phishing-for-credentials-if-you-want-it-just-ask/
