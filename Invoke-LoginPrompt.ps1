@@ -4,6 +4,6 @@
 
 function Invoke-LoginPrompt{
 $cred = $Host.ui.PromptForCredential("Windows Security", "Please enter user credentials", "$env:userdomain\$env:username","")
-$newcred = $cred.GetNetworkCredential()
+$newcred = $cred.GetNetworkCredential() | select-object UserName, Domain, Password
 $newcred
 }
