@@ -2,6 +2,11 @@
 .SYNOPSIS
 Standalone Powershell script that will promp the current user for a valid credentials.
 
+Author: Matt Nelson (@enigma0x3)
+License: BSD 3-Clause
+Required Dependencies: None
+Optional Dependencies: None
+
 .DESCRIPTION
 This script will pop a Windows Authentication box and ask the user for credentials. It will then validate those credentials and continue to ask until proper credentials are supplied.
 
